@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Beginner's Cheat Sheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        pre {
+            background: #222;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🐍 Python Beginner's Code Sheet 🚀</h1>
+
+    <h2>1️⃣ Printing Output</h2>
+    <pre>print("Hello, World!")</pre>
+
+    <h2>2️⃣ Variables & Data Types</h2>
+    <pre>
+name = "Alice"  # String
+age = 25        # Integer
+height = 5.5    # Float
+is_student = True  # Boolean
+print(name, age, height, is_student)
+    </pre>
+
+    <h2>3️⃣ User Input</h2>
+    <pre>
+name = input("Enter your name: ")
+print("Hello, " + name + "!")
+    </pre>
+
+    <h2>4️⃣ Type Conversion</h2>
+    <pre>
+age = int(input("Enter your age: ")) 
+print("Next year, you will be", age + 1)
+    </pre>
+
+    <h2>5️⃣ Conditional Statements</h2>
+    <pre>
+age = 18
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")
+    </pre>
+
+    <h2>6️⃣ Loops</h2>
+    <h3>For Loop</h3>
+    <pre>
+for i in range(5):  
+    print("Iteration:", i)
+    </pre>
+    <h3>While Loop</h3>
+    <pre>
+count = 0
+while count < 5:
+    print("Count:", count)
+    count += 1  
+    </pre>
+
+    <h2>7️⃣ Functions</h2>
+    <pre>
+def greet(name):
+    return "Hello, " + name + "!"
+print(greet("Alice"))
+    </pre>
+
+    <h2>8️⃣ Lists (Arrays)</h2>
+    <pre>
+fruits = ["Apple", "Banana", "Cherry"]
+print(fruits[0])  
+fruits.append("Orange")  
+print(fruits)
+    </pre>
+
+    <h2>9️⃣ Dictionaries (Key-Value Pairs)</h2>
+    <pre>
+person = {"name": "Alice", "age": 25}
+print(person["name"])
+person["city"] = "New York"
+print(person)
+    </pre>
+
+    <h2>🔟 List Comprehension</h2>
+    <pre>
+numbers = [1, 2, 3, 4, 5]
+squared = [x**2 for x in numbers]
+print(squared)  
+    </pre>
+
+    <h2>1️⃣1️⃣ Exception Handling</h2>
+    <pre>
+try:
+    x = int(input("Enter a number: "))
+    print("You entered:", x)
+except ValueError:
+    print("Invalid input! Please enter a number.")
+    </pre>
+
+    <h2>1️⃣2️⃣ File Handling</h2>
+    <pre>
+# Writing to a file
+with open("example.txt", "w") as file:
+    file.write("Hello, World!")
+
+# Reading from a file
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)
+    </pre>
+
+    <h2>🎯 Summary of Python Basics</h2>
+    <table>
+        <tr>
+            <th>Concept</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>Print</td>
+            <td><pre>print("Hello")</pre></td>
+        </tr>
+        <tr>
+            <td>Variables</td>
+            <td><pre>x = 10</pre></td>
+        </tr>
+        <tr>
+            <td>User Input</td>
+            <td><pre>name = input()</pre></td>
+        </tr>
+        <tr>
+            <td>If Statement</td>
+            <td><pre>if x > 0:</pre></td>
+        </tr>
+        <tr>
+            <td>Loops</td>
+            <td><pre>for i in range(5):</pre></td>
+        </tr>
+        <tr>
+            <td>Function</td>
+            <td><pre>def my_func():</pre></td>
+        </tr>
+        <tr>
+            <td>List</td>
+            <td><pre>my_list = [1, 2, 3]</pre></td>
+        </tr>
+        <tr>
+            <td>Dictionary</td>
+            <td><pre>my_dict = {"a": 1}</pre></td>
+        </tr>
+        <tr>
+            <td>File Handling</td>
+            <td><pre>open("file.txt")</pre></td>
+        </tr>
+        <tr>
+            <td>Exception Handling</td>
+            <td><pre>try: ... except:</pre></td>
+        </tr>
+    </table>
+
+    <footer>
+        <p>🚀 Keep Coding & Have Fun with Python! 🐍</p>
+    </footer>
+
+</body>
+</html>
